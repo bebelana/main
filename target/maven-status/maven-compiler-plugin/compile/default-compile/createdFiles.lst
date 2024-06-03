@@ -1,0 +1,11 @@
+digito_unico\Repository\UsuarioRepository.class
+digito_unico\Service\CacheService$1.class
+digito_unico\Service\CriptografiaService.class
+digito_unico\Controller\UsuarioController.class
+digito_unico\Repository\ResultadoRepository.class
+digito_unico\Model\Resultado.class
+digito_unico\Service\UsuarioService.class
+digito_unico\Service\CacheService.class
+digito_unico\Model\Usuario.class
+digito_unico\Service\DigitoUnicoService.class
+digito_unico\App.class
