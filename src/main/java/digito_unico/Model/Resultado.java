@@ -1,52 +1,34 @@
 package digito_unico.Model;
 
-public class Resultado {
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Resultado implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String numero;
     private Integer digitoUnico;
 
-    public Resultado() {
+    public Resultado(){
+
     }
 
-    public Resultado(Long id, String numero, Integer digitoUnico) {
+    public  Resultado(Long id, String numero, Integer digitoUnico) {
         this.id = id;
-        this.numero = numero;
-        this.digitoUnico = digitoUnico;
+        this.numero =numero;
+        this.digitoUnico =digitoUnico;
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public String getNumero() {
-        return numero;
-    }
-
-    public Integer getDigitoUnico() {
-        return digitoUnico;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-    public void setDigitoUnico(Integer digitoUnico) {
-        this.digitoUnico = digitoUnico;
-    }
-
-    public void setParametros(String numero, Integer digitoUnico) {
-        this.numero = numero;
-        this.digitoUnico = digitoUnico;
-    }
-    
-    
-    
     public void setResultado(int resultado) {
         this.digitoUnico = resultado;
     }
 
+    public void setParametros(String s, int resultado) {
+    }
 }
