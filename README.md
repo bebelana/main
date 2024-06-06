@@ -4,13 +4,11 @@ Este projeto implementa um serviço de cálculo de dígito único, incluindo um 
 
 ## Tecnologias Utilizadas
 
-- Java 8+
+
 - Spring Boot
 - JPA com H2 Database
 - Maven
 - JUnit para testes unitários
-- Swagger para documentação da API
-- Postman para testes de integração
 
 ## Estrutura do Projeto
 
